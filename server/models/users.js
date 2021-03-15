@@ -3,6 +3,10 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 let UserSchema = new Schema({
+    userRole: {
+        type: String,
+        enum: ["admin", "buyer"],
+    },
     firstName: {
         type: String,
     },
