@@ -1,11 +1,11 @@
 const mongoose = require("mongoose");
-
+const bcrypt = require("bcrypt");
 const Schema = mongoose.Schema;
 
 let UserSchema = new Schema({
     userRole: {
         type: String,
-        enum: ["admin", "buyer"],
+        enum: ["admin", "user"],
     },
     firstName: {
         type: String,
@@ -20,17 +20,12 @@ let UserSchema = new Schema({
         type: String,
         required: true,
         lowercase: true,
-        validate: value => {
-            if (!validator.isEmail(value)) {
-                throw new Error({ error: 'Invalid Email address' })
-            }
-        }
-    },
-    password: {
+      },
+      password: {
         type: String,
         required: true,
-        minLength: 4,
-    },
+        minlength: 4,
+      },
     image: {
         type: String
     },
@@ -38,6 +33,25 @@ let UserSchema = new Schema({
         type: String,
     }
 });
+
+UserSchema.pre("save", function (next) {
+    if (!this.isModified("password")) return next();
+    bcrypt.hash(this.password, 10, (err, passwordHash) => {
+      if (err) return next(err);
+      this.password = passwordHash;
+      next();
+    });
+  });
+  
+  UserSchema.methods.comparePassword = function (password, cb) {
+    bcrypt.compare(password, this.password, (err, isMatch) => {
+      if (err) return cb(err);
+      else {
+        if (!isMatch) return cb(null, isMatch);
+        return cb(null, this);
+      }
+    });
+  };
 
 
 const User = mongoose.model("User", UserSchema);
