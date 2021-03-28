@@ -4,6 +4,10 @@ const PORT = process.env.PORT || 5000;
 
 const mongoose = require('mongoose');
 
+app.use(express.json());
+
+
+
 const MONGO_URL =
     process.env.MONGODB_URL || "mongodb://localhost/ecommerce_mern_ccsf"
 
@@ -17,7 +21,8 @@ mongoose.connect(
     }
 );
 
-
+const userRoutes = require("./routes/userRoutes");
+app.use("/", userRoutes)
 
 
 app.listen(PORT, () => {
