@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Nav, NavDropdown} from 'react-bootstrap';
+import { Navbar, Nav, NavDropdown, Brand} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import SearchBar from './SearchBar';
