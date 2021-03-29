@@ -1,7 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand />
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ca5e0dd-d2d0-4265-9ccb-536a5d281e69" name="Default Changelist" comment="" />
+    <list default="true" id="7ca5e0dd-d2d0-4265-9ccb-536a5d281e69" name="Default Changelist" comment="add Header.js, HomePage.js, SearchBox.js">
+      <change afterPath="$PROJECT_DIR$/client/public/images/Am1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/public/images/Am10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/public/images/Am2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/public/images/Am3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/public/images/Am4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/public/images/Am5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/public/images/Am6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/public/images/Am7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/public/images/Am8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/public/images/Am9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/public/images/Amaz1-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/public/images/Amaz1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/public/images/Amaz2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/public/images/Amaz3-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/public/images/Amaz3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/public/images/airpods.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/public/images/alexa.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/public/images/camera.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/public/images/mouse.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/public/images/phone.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/public/images/playstation.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/public/images/tablet.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/Component/Header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/Component/HomePage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/Component/SearchBox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,9 +62,15 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../redux-sandbox" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/public" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\shama\WebstormProjects\Ecommerce-mern\client\public" />
+      <recent name="C:\Users\shama\WebstormProjects\Ecommerce-mern\client\src\Component" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -41,7 +81,7 @@
       <option name="presentableId" value="Default" />
       <updated>1616521247111</updated>
       <workItem from="1616521248800" duration="9371000" />
-      <workItem from="1617013550628" duration="358000" />
+      <workItem from="1617013550628" duration="7006000" />
     </task>
     <task id="LOCAL-00001" summary="v-3/29">
       <created>1617013796039</created>
@@ -50,25 +90,69 @@
       <option name="project" value="LOCAL" />
       <updated>1617013796039</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="v-3/29">
+      <created>1617013958944</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1617013958944</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:C:/Users/shama/WebstormProjects/Ecommerce-mern/client/src/Component" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1" value="TOOL_WINDOW" />
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="v-3/29" />
-    <option name="LAST_COMMIT_MESSAGE" value="v-3/29" />
+    <MESSAGE value="add Header.js, HomePage.js, SearchBox.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Header.js, HomePage.js, SearchBox.js" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="536" y="129" key="CommitChangelistDialog2" timestamp="1617013283345">
+    <state x="599" y="77" key="CommitChangelistDialog2" timestamp="1617034502833">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="536" y="129" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1617013283345" />
-    <state x="1049" y="300" key="FileChooserDialogImpl" timestamp="1616522192957">
+    <state x="599" y="77" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1617034502833" />
+    <state x="1049" y="300" key="FileChooserDialogImpl" timestamp="1617014007812">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1049" y="300" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1616522192957" />
+    <state x="1049" y="300" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1617014007812" />
     <state width="1046" height="258" key="GridCell.Tab.0.bottom" timestamp="1617013440332">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -85,9 +169,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1046" height="258" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1617013440332" />
-    <state x="951" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1617013366965">
+    <state x="418" y="254" key="Vcs.Push.Dialog.v2" timestamp="1617035058019">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="951" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1617013366965" />
+    <state x="418" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1617035058019" />
+    <state x="951" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1617032950198">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="951" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1617032950198" />
   </component>
 </project>
