@@ -5,7 +5,7 @@ const SearchBox = () => {
 
 
     return (
-        <Form onSubmit='' className='form-in'>
+        <Form onSubmit='' className='form-in pl-lg-5 pr-lg-5'>
             <InputGroup>
                 <Form.Control
                     type='text'
