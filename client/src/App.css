@@ -39,10 +39,12 @@
  .form-in {
      display:flex;
      flex-grow:1;
+     margin: 0 40px;
      max-width: 600px;
  }
  @media (max-width: 978px) {
      .form-in {
+         margin: auto;
          max-width: none;
      }
  }
