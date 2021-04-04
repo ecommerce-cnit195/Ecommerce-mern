@@ -6,19 +6,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ca5e0dd-d2d0-4265-9ccb-536a5d281e69" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/Component/categoryA.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/Component/categoryA1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/Component/categoryA2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/Component/categoryA3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/Component/register.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/Component/signIn.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Component/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Component/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Component/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Component/homePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Component/SearchBox.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Component/searchBox.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/server/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Component/categoryA.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Component/categoryA1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Component/categoryA2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Component/categoryA3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Component/header.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Component/homePage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Component/register.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Component/searchBox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Component/signIn.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +65,8 @@
       <updated>1616521247111</updated>
       <workItem from="1616521248800" duration="9371000" />
       <workItem from="1617013550628" duration="8225000" />
-      <workItem from="1617356753497" duration="8092000" />
+      <workItem from="1617356753497" duration="10152000" />
+      <workItem from="1617528206034" duration="4442000" />
     </task>
     <task id="LOCAL-00001" summary="v-3/29">
       <created>1617013796039</created>
@@ -89,7 +89,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617035072610</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="change folder Component, add Component">
+      <created>1617387672125</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1617387672125</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,17 +142,18 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="v-3/29" />
     <MESSAGE value="add Header.js, HomePage.js, SearchBox.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Header.js, HomePage.js, SearchBox.js" />
+    <MESSAGE value="change folder Component, add Component" />
+    <option name="LAST_COMMIT_MESSAGE" value="change folder Component, add Component" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="599" y="77" key="CommitChangelistDialog2" timestamp="1617035072109">
+    <state x="599" y="77" key="CommitChangelistDialog2" timestamp="1617387671427">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="599" y="77" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1617035072109" />
-    <state x="1049" y="300" key="FileChooserDialogImpl" timestamp="1617014007812">
+    <state x="599" y="77" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1617387671427" />
+    <state x="1049" y="300" key="FileChooserDialogImpl" timestamp="1617445540083">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1049" y="300" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1617014007812" />
+    <state x="1049" y="300" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1617445540083" />
     <state width="1046" height="258" key="GridCell.Tab.0.bottom" timestamp="1617013440332">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -162,10 +170,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1046" height="258" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1617013440332" />
-    <state x="418" y="254" key="Vcs.Push.Dialog.v2" timestamp="1617035085961">
+    <state x="418" y="254" key="Vcs.Push.Dialog.v2" timestamp="1617387685480">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="418" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1617035085961" />
+    <state x="418" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1617387685480" />
     <state x="951" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1617032950198">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
