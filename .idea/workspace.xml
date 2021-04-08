@@ -5,20 +5,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ca5e0dd-d2d0-4265-9ccb-536a5d281e69" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Component/categoryA.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Component/categoryA1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Component/categoryA2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Component/categoryA3.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Component/header.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Component/homePage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Component/register.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Component/searchBox.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Component/signIn.js" beforeDir="false" />
-    </list>
+    <list default="true" id="7ca5e0dd-d2d0-4265-9ccb-536a5d281e69" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,9 +21,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/client/src/Component/Authenication/Register.js" root0="SKIP_HIGHLIGHTING" />
-  </component>
   <component name="ProjectId" id="1qAT9wIKmcNb0IFeJ3udbqfooDz" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -45,12 +29,13 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/Component" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/pages" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\shama\WebstormProjects\Ecommerce-mern\client\src\pages" />
       <recent name="C:\Users\shama\WebstormProjects\Ecommerce-mern\client\src\Component" />
       <recent name="C:\Users\shama\WebstormProjects\Ecommerce-mern\client\public" />
     </key>
@@ -66,7 +51,10 @@
       <workItem from="1616521248800" duration="9371000" />
       <workItem from="1617013550628" duration="8225000" />
       <workItem from="1617356753497" duration="10152000" />
-      <workItem from="1617528206034" duration="4442000" />
+      <workItem from="1617528206034" duration="5176000" />
+      <workItem from="1617617851057" duration="5000" />
+      <workItem from="1617874463014" duration="655000" />
+      <workItem from="1617875211276" duration="963000" />
     </task>
     <task id="LOCAL-00001" summary="v-3/29">
       <created>1617013796039</created>
@@ -96,7 +84,21 @@
       <option name="project" value="LOCAL" />
       <updated>1617387672125</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary=" add Product, BrandBox, Footer, fix Header">
+      <created>1617548582316</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1617548582316</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add folders pages (for more than one component), actions, reducer">
+      <created>1617876164270</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1617876164270</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,13 +145,15 @@
     <MESSAGE value="v-3/29" />
     <MESSAGE value="add Header.js, HomePage.js, SearchBox.js" />
     <MESSAGE value="change folder Component, add Component" />
-    <option name="LAST_COMMIT_MESSAGE" value="change folder Component, add Component" />
+    <MESSAGE value=" add Product, BrandBox, Footer, fix Header" />
+    <MESSAGE value="add folders pages (for more than one component), actions, reducer" />
+    <option name="LAST_COMMIT_MESSAGE" value="add folders pages (for more than one component), actions, reducer" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="599" y="77" key="CommitChangelistDialog2" timestamp="1617387671427">
+    <state x="412" y="117" key="CommitChangelistDialog2" timestamp="1617876163467">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="599" y="77" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1617387671427" />
+    <state x="412" y="117" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1617876163467" />
     <state x="1049" y="300" key="FileChooserDialogImpl" timestamp="1617445540083">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -170,10 +174,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1046" height="258" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1617013440332" />
-    <state x="418" y="254" key="Vcs.Push.Dialog.v2" timestamp="1617387685480">
+    <state x="418" y="254" key="Vcs.Push.Dialog.v2" timestamp="1617876176307">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="418" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1617387685480" />
+    <state x="418" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1617876176307" />
     <state x="951" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1617032950198">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

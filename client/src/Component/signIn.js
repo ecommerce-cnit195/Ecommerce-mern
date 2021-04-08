@@ -1,15 +1,14 @@
 import React from 'react';
-import { Form, Button } from 'react-bootstrap';
+import {Form, Button, Container} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
-import './SignIn.css'
+
 
 const SignIn = (props) => {
     return (
-        <div>
-            <h1>Sign In</h1>
-            <Form className="SignInContainer">
+        <Container  className="justify-content-center p-5" >
+            <h1 className='pt-5'>Sign In</h1>
+            <Form className="p-3">
                 <Form.Group controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
                     <Form.Control type="email" placeholder="Enter email" />
@@ -21,15 +20,16 @@ const SignIn = (props) => {
                     <Form.Label>Password</Form.Label>
                     <Form.Control type="password" placeholder="Password" />
                 </Form.Group>
-                <Button variant="primary" type="submit">
+                <Button variant="warning" type="submit">
                     Submit
                 </Button>
             </Form>
-            <div className="ToRegister">
+            <div className="p-3">
                 <p>New Customer?</p>
-                <Link to="/Register">Register</Link>
+                <Link to="/register">Register</Link>
             </div>
-        </div>
+            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        </Container>
     )
 }
 

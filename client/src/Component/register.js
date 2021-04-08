@@ -1,14 +1,14 @@
 import React from 'react';
-import { Form, Button } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import {Form, Button, Container} from 'react-bootstrap';
 
-import './Register.css';
+
+
 
 const Register = (props) => {
     return (
-        <div>
-            <h1>Register</h1>
-            <Form className="RegisterContainer">
+        <Container  className="justify-content-center p-5" >
+            <h1 className='pt-5'>Register</h1>
+            <Form className=" p-3">
                 <Form.Group controlId="formBasicEmail">
                     <Form.Label>Username</Form.Label>
                     <Form.Control type="text" placeholder="Enter an username" />
@@ -28,11 +28,12 @@ const Register = (props) => {
                     <Form.Label>Confirm password</Form.Label>
                     <Form.Control type="password" placeholder="Password" />
                 </Form.Group>
-                <Button variant="primary" type="submit">
+                <Button variant="warning" type="submit" >
                     Submit
                 </Button>
             </Form>
-        </div>
+            <br /><br /><br /><br /><br /><br /><br /><br />
+        </Container>
     )
 }
 
