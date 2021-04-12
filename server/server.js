@@ -21,9 +21,11 @@ mongoose.connect(
     }
 );
 
-const userRoutes = require("./routes/userRoutes");
-app.use("/", userRoutes)
+const userRouter = require("./routes/userRoutes");
+app.use("/", userRouter)
 
+const productsRouter = require("./routes/productsRoutes");
+app.use("/product", productsRouter)
 
 app.listen(PORT, () => {
     console.log(`listening at http://localhost:${PORT}`);
