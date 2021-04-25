@@ -47,15 +47,13 @@ userRouter.post("/register", (req, res) => {
 });
 
 userRouter.post("/login", passport.authenticate("local",{session:false}), (req,res)=>{
-  if (req.isAuthenticated()) {
+    if (req.isAuthenticated()) {
     console.log("logged")
     const { _id, username } = req.user;
     const token = signToken(_id);
     res.cookie("access_token", token, { httpOnly: true, sameSite: true });
     res.cookie("userID", _id, { httpOnly: true, sameSite: true });
     res.status(200).json({ isAuthenticated: true, user: { username, _id } });
-  }else {
-    console.log("not logged")
   }
 }
 )
