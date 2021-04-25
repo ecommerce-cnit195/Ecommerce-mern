@@ -3,6 +3,7 @@ const userRouter = express.Router();
 const User = require("../models/users");
 const passport = require("passport");
 const JWT = require("jsonwebtoken");
+const passportConfig = require("../passport/passport");
 
 const signToken = (userId) =>{
     return JWT.sign(
@@ -18,7 +19,7 @@ const signToken = (userId) =>{
 userRouter.post("/register", (req, res) => {
   const { username, password, email } = req.body;
   console.log(req.body)
-    console.log(username)
+  console.log(username)
   User.findOne({ username }, (err, user) => {
     if (err)
       res
@@ -46,13 +47,16 @@ userRouter.post("/register", (req, res) => {
 });
 
 userRouter.post("/login", passport.authenticate("local",{session:false}), (req,res)=>{
-    if(req.isAuthenticated()){
-        const {_id,username} = req.user
-        const token = signToken(_id);
-        res.cookie("access_token", token,{httpOnly:true,sameSite:true})
-        res.cookie("userId", _id,{httpOnly:true,sameSite:true})
-        res.status(200).json({isAuthenticated:true, user:{username, _id}})
-    }
+  if (req.isAuthenticated()) {
+    console.log("logged")
+    const { _id, username } = req.user;
+    const token = signToken(_id);
+    res.cookie("access_token", token, { httpOnly: true, sameSite: true });
+    res.cookie("userID", _id, { httpOnly: true, sameSite: true });
+    res.status(200).json({ isAuthenticated: true, user: { username, _id } });
+  }else {
+    console.log("not logged")
+  }
 }
 )
 
