@@ -22,7 +22,7 @@ const SignIn = (props) => {
             if(isAuhtentecated){
                 authContext.setUser(user)
                 authContext.isAuhtentecated(isAuhtentecated)
-                props.history.push("/")
+                props.history.push("/categoryA")
             } else setMessage(message)
         })
     }
@@ -49,7 +49,7 @@ const SignIn = (props) => {
                 <Form.Group controlId="formBasicPassword">
                     <Form.Label>Password</Form.Label>
                     <Form.Control 
-                    classNmae="input"
+                    className="input"
                     name="password"
                     type="password" 
                     placeholder="Password" 

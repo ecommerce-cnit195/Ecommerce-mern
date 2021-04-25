@@ -28,17 +28,23 @@ setUser({username:"", password:"", email:""})
 
     const onSubmit =(e)=>{
         e.preventDefault()
-        AuthService.register(user).then((data) =>{
-            const {message} = data;
-            setMessage(message)
-            resetEntries()
-
-            if(!message.msgError){
-                timerID = setTimeout(()=>{
-                    props.history.push("/signIn")
-                },3000)
-            }
-        })
+        if(user.password !== user.password2){
+            // const {message} = {msgError: true, msgBody:"Your password and confirmation password do not match."}
+            // setMessage(message)
+            alert("Passwords don't match")
+        } else {
+            AuthService.register(user).then((data) =>{
+                const {message} = data;
+                setMessage(message)
+    
+                if(!message.msgError){
+                    resetEntries()
+                    timerID = setTimeout(()=>{
+                        props.history.push("/signIn")
+                    },3000)
+                }
+            })
+        }
     }
 
     return (
@@ -81,10 +87,11 @@ setUser({username:"", password:"", email:""})
                         value={user.password}
                         onChange={onChange} />
                 </Form.Group>
-                <Form.Group controlId="formBasicPassword">
+                <Form.Group controlId="formBasicPassword" className="">
                     <Form.Label>Confirm password</Form.Label>
                     <Form.Control 
-                        className="input" 
+                        className="input"
+                        key="pwd2" 
                         type="password" 
                         placeholder="Confirm password"
                         name="password2"
