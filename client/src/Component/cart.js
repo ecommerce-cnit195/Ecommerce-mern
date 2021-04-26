@@ -3,7 +3,7 @@ import {connect,useSelector} from "react-redux";
 import {Container} from "react-bootstrap";
 
 const Cart = (props) => {
-    const itemsInCart = props.itemsInCart;
+    const itemsInCart = useSelector(state => state.shoppingCartReducer);
     console.log("cart,", itemsInCart);
     return(
         <Container  className="justify-content-center p-5" >
@@ -16,9 +16,9 @@ const Cart = (props) => {
     )
 }
 
-const mapStateToProps = (state) => {
-    console.log("state in cart,", state);
-    return {itemsInCart: state.shoppingCartReducer};
-}
+// const mapStateToProps = (state) => {
+//     console.log("state in cart,", state);
+//     return {itemsInCart: state.shoppingCartReducer};
+// }
 
-export default connect(mapStateToProps, null)(Cart);
+export default Cart;
