@@ -2,6 +2,15 @@ import React from "react";
 import {Form, Col,Row, Card} from 'react-bootstrap';
 
 const BrandBox =(props) => {
+    
+    const filterBrand = (brand) => {
+
+        console.log("e.target.value,",brand);
+
+        props.setcategoryProducts(
+            props.filterProducts.filter((i) => i.brand === brand)
+        )
+    }
 
     return (
 
@@ -9,13 +18,22 @@ const BrandBox =(props) => {
         <Form.Group as={Col} >
                 <Form.Label as="legend" >
                     Brands
+
                 </Form.Label>
-                {props.categoryProducts.map((item) => (
+                <Form.Check
+                    type="radio"
+                    label="all"
+                    name="formHorizontalRadios"
+                    id="formHorizontalRadios1"
+                    onChange={() => props.setcategoryProducts(props.filterProducts)}
+                   />
+                {props.filterProducts.map((item) => (
                     <Form.Check
                     type="radio"
                     label={item.brand}
                     name="formHorizontalRadios"
                     id="formHorizontalRadios1"
+                    onChange={() => filterBrand(item.brand)}
                    />
                 ))}
                 {/* <Form.Check

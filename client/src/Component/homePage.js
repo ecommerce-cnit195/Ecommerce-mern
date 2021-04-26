@@ -2,7 +2,7 @@ import React, {useState, useEffect}  from 'react';
 import axios from 'axios';
 import {connect,useSelector} from "react-redux";
 import store from '../redux/store';
-import  {  Card, CardDeck, Carousel, Container, Image, Button, CardColumns  } from 'react-bootstrap';
+import  {  Card, CardDeck, Carousel, Container, Image, Button, CardColumns, Col, Row } from 'react-bootstrap';
 import {addItemToCart} from "../redux/action/action";
 
 const endpoint = 'http://localhost:5000/product';
@@ -73,7 +73,7 @@ const HomePage = (props) => {
                 <CardColumns>
                 {products.map((item)=>(
                       <Card border='warning' className='ml-2 mt-2 p-2'>
-                      <Card.Link href="/productPage">
+                      <Card.Link href={`/productPage/${item._id}`}>
                               <Card.Img variant="top" src={item.productImge} style={{width: '100%', height: '220px', objectFit: "contain"}}/>
                         </Card.Link>
                          <Card.Body>
