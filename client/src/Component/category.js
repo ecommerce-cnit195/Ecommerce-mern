@@ -38,7 +38,7 @@ const Category = (props) => {
                         categoryProducts.length === 0 ? ((<h1>No products can found</h1>)) :(
                         categoryProducts.map((item) => (
                             <Card style={{ width: '18rem' }} className='ml-3 mt-2 p-2' border='warning' key={item._id}>
-                                <Card.Img variant="top" src={item.productImge} />
+                                <Card.Img variant="top" src={item.productImge} style={{width: '100%', height: '220px', objectFit: "contain"}}/>
                                 <Card.Body>
                                     <Card.Title>{item.productName}</Card.Title>
                                     <Card.Text>{item.brand}</Card.Text>
