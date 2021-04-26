@@ -74,7 +74,7 @@ const HomePage = (props) => {
                 {products.map((item)=>(
                       <Card border='warning' className='ml-2 mt-2 p-2'>
                       <Card.Link href="/productPage">
-                              <Card.Img variant="top" src={item.productImge}/>
+                              <Card.Img variant="top" src={item.productImge} style={{width: '100%', height: '220px', objectFit: "contain"}}/>
                         </Card.Link>
                          <Card.Body>
                           <Card.Title>{item.productName}</Card.Title>
