@@ -26,7 +26,10 @@ const HomePage = (props) => {
                     }
                 }
                 setCategories(temp);
-             })             
+             })
+             .catch((error) => {
+                console.log('Error for getting products!');
+            })             
        
 }, [])
 
@@ -55,13 +58,13 @@ const HomePage = (props) => {
             </Carousel>
             {ifLoading == true ? ((<h1>Loading....</h1>)) : (
                 <>
-                <h2 className='m-3'>Categories</h2>
+                <h2 className='m-3'>Shop By Categories</h2>
                 <CardDeck className='m-1'>
                  {
                    categories.map((item,i)=> (
                     <Card className='border-warning'key={i}>
                         <Card.Title style={{margin:'10px'}}>{item}</Card.Title>
-                        <Card.Link href="#" style={{margin: '10px'}}>See More</Card.Link>
+                        <Card.Link href={`/category/${item}`} style={{margin: '10px'}}>See More</Card.Link>
                     </Card>
                    ))
                  }
