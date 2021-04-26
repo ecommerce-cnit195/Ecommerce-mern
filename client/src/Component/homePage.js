@@ -1,7 +1,7 @@
 import React, {useState, useEffect}  from 'react';
 import axios from 'axios';
 import {connect,useSelector} from "react-redux";
-
+import store from '../redux/store';
 import  {  Card, CardDeck, Carousel, Container, Image, Button, CardColumns  } from 'react-bootstrap';
 import {addItemToCart} from "../redux/action/action";
 
@@ -13,27 +13,22 @@ const HomePage = (props) => {
     const [categories, setCategories] = useState([]);
     
     useEffect(() => {
+        const temp = [];
         axios.get(`${endpoint}/products/all`)
              .then((res) => {
                  setProducts(res.data);
                  setIfLoading(false);
-             })
-        
-       console.log("prducts effect,", products);
+                 for(let i = 0; i < res.data.length; i++){
+                    if(temp.includes(res.data[i].categories)){
+                        continue;
+                    }else{
+                        temp.push(res.data[i].categories);
+                    }
+                }
+                setCategories(temp);
+             })             
        
-       const temp = [];
-       
-       for(let i = 0; i < products.length; i++){
-           if(temp.includes(products[i].categories)){
-               continue;
-           }else{
-               temp.push(products[i].categories);
-           }
-       }
-       
-       setCategories(temp);
-
-    }, [])
+}, [])
 
     console.log("prducts,", products);
     console.log("categies,", categories);
@@ -85,7 +80,7 @@ const HomePage = (props) => {
                               <Card.Text>Description: {item.description}
                               </Card.Text>
                              <Button variant="warning"
-                                onClick={()=>props.addToCart(item)}>Add to cart
+                                onClick={()=>store.dispatch(addItemToCart(item))}>Add to cart
                              </Button>
                           </Card.Body>
                   </Card>
@@ -101,17 +96,18 @@ const HomePage = (props) => {
         
 }
 
-const mapDispatchtoProps = (dispatch) => {
-    return {
-        addToCart: (item) => {
-            dispatch(addItemToCart({item}));
-        }
-    }
-}
+// const mapDispatchtoProps = (dispatch) => {
+//     return {
+//         addToCart: (item) => {
+//             dispatch(addItemToCart({item}));
+//         }
+//     }
+// }
 
-const mapStateToProps = (state) => {
-    console.log("state in homepage,", state);
-    return {itemsInCart: state.shoppingCartReducer};
-}
+// const mapStateToProps = (state) => {
+//     console.log("state in homepage,", state);
+//     return {itemsInCart: state.shoppingCartReducer};
+// }
 
-export default connect(mapStateToProps, mapDispatchtoProps)(HomePage);
+// export default connect(mapStateToProps, mapDispatchtoProps)(HomePage);
+export default HomePage;
