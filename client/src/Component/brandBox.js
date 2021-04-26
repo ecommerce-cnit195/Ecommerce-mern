@@ -1,19 +1,24 @@
 import React from "react";
 import {Form, Col,Row, Card} from 'react-bootstrap';
 
-const BrandBox =() => {
+const BrandBox =(props) => {
 
     return (
 
  <Card style={{ width: '18rem' }} className='p-4 ' border='warning'>
         <Form.Group as={Col} >
-
-
-
                 <Form.Label as="legend" >
                     Brands
                 </Form.Label>
-                <Form.Check
+                {props.categoryProducts.map((item) => (
+                    <Form.Check
+                    type="radio"
+                    label={item.brand}
+                    name="formHorizontalRadios"
+                    id="formHorizontalRadios1"
+                   />
+                ))}
+                {/* <Form.Check
                     type="radio"
                     label="Apple"
                     name="formHorizontalRadios"
@@ -48,7 +53,7 @@ const BrandBox =() => {
                     label="Google"
                     name="formHorizontalRadios"
                     id="formHorizontalRadios3"
-                />
+                /> */}
                 <br />
             <Form.Label as="legend" >
                 Price
