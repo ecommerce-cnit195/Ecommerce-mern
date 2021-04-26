@@ -1,25 +1,47 @@
+import React from "react";
 import './App.css';
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import Cart from './Component/cart';
 
-import Register from './Component/Authenication/Register';
-import SignIn from './Component/Authenication/Signin';
-import NavBar from './Component/Navbar/Navbar';
-import Cart from './Component/Cart/Cart';
+import Header from "./Component/header";
+import HomePage from "./pages/homePage";
+import Register from "./Component/register";
+import SignIn from "./Component/signIn";
+import CategoryA from "./pages/categoryA";
+import CategoryA1 from "./pages/categoryA1";
+import CategoryA2 from "./pages/categoryA2";
+import CategoryA3 from "./pages/categoryA3";
+
+import Footer from "./Component/footer";
+import ProductPage from "./pages/productPage";
+
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <NavBar />
+        <Header />
+
+
         <Switch>
-          <Route path='/SignIn' exact component={SignIn} />
-          <Route path='/Register' exact component={Register} />
-          <Route path='/Cart' component={Cart} />
+          <Route path='/' exact component={HomePage}/>
+          <Route path='/register' exact component={Register}/>
+          <Route path='/signIn' exact component={SignIn}/>
+          <Route path='/categoryA' exact component={CategoryA}/>
+          <Route path='/categoryA1' exact component={CategoryA1}/>
+          <Route path='/categoryA2' exact component={CategoryA2}/>
+          <Route path='/categoryA3' exact component={CategoryA3}/>
+          <Route path='/productPage' exact component={ProductPage}/>
+          <Route path='/cart' exact component={Cart}/>
+
+
+
           {/* <Route path='/add' component={AddEvent} />
           <Route path='/edit/:id' component={Edit} />  */}
         </Switch>
+        <Footer />
       </BrowserRouter>
     </div>
 
