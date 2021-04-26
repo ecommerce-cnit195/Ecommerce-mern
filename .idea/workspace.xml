@@ -5,7 +5,35 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ca5e0dd-d2d0-4265-9ccb-536a5d281e69" name="Default Changelist" comment="" />
+    <list default="true" id="7ca5e0dd-d2d0-4265-9ccb-536a5d281e69" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/client/src/component/product.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/global.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/store/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/store/state.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Component/brandBox.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/component/brandBox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Component/cart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Component/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/component/footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Component/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/component/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Component/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/component/register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Component/searchBox.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/component/searchBox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Component/signIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/component/signIn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/actions/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/categoryA.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/categoryA1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/categoryA2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/categoryA3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/homePage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/productPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/reducer/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,6 +49,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="ProjectId" id="1qAT9wIKmcNb0IFeJ3udbqfooDz" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -29,12 +63,13 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/pages" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/component" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\shama\WebstormProjects\Ecommerce-mern\client\src\component" />
       <recent name="C:\Users\shama\WebstormProjects\Ecommerce-mern\client\src\pages" />
       <recent name="C:\Users\shama\WebstormProjects\Ecommerce-mern\client\src\Component" />
       <recent name="C:\Users\shama\WebstormProjects\Ecommerce-mern\client\public" />
@@ -54,7 +89,8 @@
       <workItem from="1617528206034" duration="5176000" />
       <workItem from="1617617851057" duration="5000" />
       <workItem from="1617874463014" duration="655000" />
-      <workItem from="1617875211276" duration="963000" />
+      <workItem from="1617875211276" duration="3399000" />
+      <workItem from="1619447867347" duration="2756000" />
     </task>
     <task id="LOCAL-00001" summary="v-3/29">
       <created>1617013796039</created>
@@ -98,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617876164270</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add folders pages (for more than one component), actions, reducer">
+      <created>1617876355253</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1617876355253</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,10 +193,14 @@
     <option name="LAST_COMMIT_MESSAGE" value="add folders pages (for more than one component), actions, reducer" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="412" y="117" key="CommitChangelistDialog2" timestamp="1617876163467">
+    <state x="412" y="117" key="CommitChangelistDialog2" timestamp="1617876354732">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="412" y="117" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1617876163467" />
+    <state x="412" y="117" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1617876354732" />
+    <state x="153" y="99" key="DiffContextDialog" timestamp="1617876327730">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="153" y="99" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617876327730" />
     <state x="1049" y="300" key="FileChooserDialogImpl" timestamp="1617445540083">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -174,10 +221,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1046" height="258" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1617013440332" />
-    <state x="418" y="254" key="Vcs.Push.Dialog.v2" timestamp="1617876176307">
+    <state x="418" y="254" key="Vcs.Push.Dialog.v2" timestamp="1617876370362">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="418" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1617876176307" />
+    <state x="418" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1617876370362" />
     <state x="951" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1617032950198">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

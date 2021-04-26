@@ -1,16 +1,16 @@
 import React  from 'react';
 
 import  { Card, Col, Container, Image, Row, Button } from 'react-bootstrap';
-import BrandBox from '../Component/brandBox';
+import BrandBox from '../component/brandBox';
 
 
 
-const CategoryA = () => {
+const Category1Page = () => {
 
 
     return (
         <Container fluid className='p-5'>
-            <h2 className='pt-5'>Shop by Electronics </h2>
+            <h2 className='pt-5'>Shop by Mobile Phones </h2>
             <Row>
                 <Col sm={3} className='pt-4 pl-5'>
                     <BrandBox  />
@@ -78,4 +78,4 @@ const CategoryA = () => {
         </Container>
     );
 };
-export default CategoryA;
+export default Category1Page;

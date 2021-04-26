@@ -19,21 +19,21 @@ const Header = () => {
                     <Nav className="mr-auto">
                         <NavDropdown title="Products" id="basic-nav-dropdown" className='p-2'>
 
-                                <NavDropdown.Item href='/categoryA'>Electronics</NavDropdown.Item>
+                            <NavDropdown.Item href='/categoryPage'>Electronics</NavDropdown.Item>
 
                             <NavDropdown.Divider/>
 
-                                <NavDropdown.Item href='/categoryA1'>Mobile Phones</NavDropdown.Item>
+                            <NavDropdown.Item href='/category1Page'>Mobile Phones</NavDropdown.Item>
 
 
-                                <NavDropdown.Item href='/categoryA2' >Laptops</NavDropdown.Item>
+                            <NavDropdown.Item href='/category2Page' >Laptops</NavDropdown.Item>
 
 
-                                <NavDropdown.Item href='/categoryA3'>Tablets</NavDropdown.Item>
+                            <NavDropdown.Item href='/category3Page'>Tablets</NavDropdown.Item>
 
                             <NavDropdown.Divider/>
 
-                                <NavDropdown.Item href='/categoryB'>Separated link</NavDropdown.Item>
+                            <NavDropdown.Item href='/categoryB'>Separated link</NavDropdown.Item>
 
                         </NavDropdown>
                     </Nav>
@@ -45,15 +45,15 @@ const Header = () => {
 
                             <NavDropdown title="Account" id="basic-nav-dropdown" className='p-2'>
 
-                                    <NavDropdown.Item href='/register'>
-                                        Register
-                                    </NavDropdown.Item>
+                                <NavDropdown.Item href='/register'>
+                                    Register
+                                </NavDropdown.Item>
 
                                 <NavDropdown.Divider/>
 
-                                    <NavDropdown.Item href='/signIn'>
-                                        Sign In
-                                    </NavDropdown.Item>
+                                <NavDropdown.Item href='/signIn'>
+                                    Sign In
+                                </NavDropdown.Item>
 
                             </NavDropdown>
                         </Nav.Item>
