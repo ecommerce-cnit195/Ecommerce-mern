@@ -47,19 +47,33 @@ productsRouter.get("/products/all", (req,res) => {
 })
 
 //get products by category
-productsRouter.get("/product/category", (req, res)=>{
-    Product.find({category: req.params.category}).then((products)=>{
-        res.json(products)
-    })
+productsRouter.get("/category/:category", (req, res)=>{
+    console.log("category,", req.params.category)
+    Product.find({categories: req.params.category})
+        .then((products)=>{
+            res.json(products)
+       })
+       .catch(err=>status(400).json("Get Error: " + err.message))
 })
 
 //get products by price
-productsRouter.get("/product/price", (req, res)=>{
-    Product.find({price: req.params.price}).then((products)=>{
-        res.json(products)
-    })
+productsRouter.get("/price/:price", (req, res)=>{
+    Product.find({productPrice: req.params.price})
+        .then((products)=>{
+           res.json(products)
+        })
+        .catch(err=>status(400).json("Get Error: " + err.message))
 })
 
+//get products by id
+productsRouter.get("/id/:id", (req, res) => {
+    console.log("category,", req.params.id)
+    Product.findById(req.params.id)
+        .then((products)=>{
+            res.json(products)
+        })
+        .catch(err=>res.status(400).json("Get Error: "+ err.message))
+})
 
 
 module.exports = productsRouter;
