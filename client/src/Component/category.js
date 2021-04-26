@@ -8,6 +8,7 @@ const endpoint = 'http://localhost:5000/product';
 const Category = (props) => {
 
     const [categoryProducts, setcategoryProducts] = useState([]);
+    const [filterProducts, setFilterProducts] = useState([]);
     const categoryParams = props.match.params.category;
     console.log(props.match.params.category);
 
@@ -16,6 +17,7 @@ const Category = (props) => {
              .then((res)=> {
                 console.log("res.data cate,", res.data);
                 setcategoryProducts(res.data);
+                setFilterProducts(res.data);
              })
              .catch((err) => {
                 console.log('Error for getting products depends on Category!');
@@ -30,7 +32,7 @@ const Category = (props) => {
             <h2 className='pt-5'>Shop by {categoryParams} </h2>
             <Row>
                <Col sm={3} className='pt-4 pl-5'>
-                    <BrandBox categoryProducts={categoryProducts} />
+                    <BrandBox categoryProducts={categoryProducts} filterProducts={filterProducts} setcategoryProducts={setcategoryProducts}/>
                 </Col>
                 <Col sm={9} className='pt-3 pl-5 '>
                     <Row >
@@ -38,7 +40,9 @@ const Category = (props) => {
                         categoryProducts.length === 0 ? ((<h1>No products can found</h1>)) :(
                         categoryProducts.map((item) => (
                             <Card style={{ width: '18rem' }} className='ml-3 mt-2 p-2' border='warning' key={item._id}>
-                                <Card.Img variant="top" src={item.productImge} style={{width: '100%', height: '220px', objectFit: "contain"}}/>
+                                <Card.Link href={`/productPage/${item._id}`}>
+                                    <Card.Img variant="top" src={item.productImge} style={{width: '100%', height: '220px', objectFit: "contain"}}/>
+                                </Card.Link>
                                 <Card.Body>
                                     <Card.Title>{item.productName}</Card.Title>
                                     <Card.Text>{item.brand}</Card.Text>
