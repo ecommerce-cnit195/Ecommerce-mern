@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Cart from './Component/cart';
 
 import Header from "./Component/header";
-import HomePage from "./pages/homePage";
+import HomePage from "./Component/homePage";
 import Register from "./Component/register";
 import SignIn from "./Component/signIn";
 import CategoryA from "./pages/categoryA";
