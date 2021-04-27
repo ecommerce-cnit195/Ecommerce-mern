@@ -1,6 +1,6 @@
-import React from "react";
+import React, {useState} from "react";
 import './App.css';
-import { Switch, Route, BrowserRouter } from 'react-router-dom';
+import { Switch, Route, BrowserRouter,Redirect } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Cart from './Component/cart';
@@ -16,17 +16,26 @@ import CategoryA3 from "./pages/categoryA3";
 
 import Footer from "./Component/footer";
 import ProductPage from "./pages/productPage";
+import SearchPage from "./Component/searchPage";
 
 
 function App() {
+  const [ifSearch, setIfSearch] = useState(false);
+
+  console.log("filterSearch,",JSON.parse(localStorage.getItem("filterProducts")));
+  const filterSearch = JSON.parse(localStorage.getItem("filterProducts"));
+  const searchProducts = JSON.parse(localStorage.getItem("Products" ));
+  console.log("searchProducts,",searchProducts);
+  
   return (
     <div className="App">
       <BrowserRouter>
-        <Header />
+        <Header setSearch={setIfSearch} searchProducts={searchProducts}/>
 
 
         <Switch>
-          <Route path='/' exact component={HomePage}/>
+          {/* <Route path='/' exact component={HomePage}/> */}
+          <Route exact={true} path='/' render={(props) => (<HomePage {...props}/> )} />
           <Route path='/register' exact component={Register}/>
           <Route path='/signIn' exact component={SignIn}/>
           <Route path='/category/:category' component={Category}/>
@@ -35,10 +44,8 @@ function App() {
           <Route path='/categoryA3' exact component={CategoryA3}/>
           <Route path='/productPage/:id' component={ProductPage}/>
           <Route path='/cart' exact component={Cart}/>
-
-
-
-          {/* <Route path='/add' component={AddEvent} />
+          <Route path='/searchPage' render={(props) => <SearchPage {...props} filterSearch={filterSearch}/>} />
+         {/* <Route path='/add' component={AddEvent} />
           <Route path='/edit/:id' component={Edit} />  */}
         </Switch>
         <Footer />

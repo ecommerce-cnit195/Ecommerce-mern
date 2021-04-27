@@ -18,6 +18,8 @@ const HomePage = (props) => {
              .then((res) => {
                  setProducts(res.data);
                  setIfLoading(false);
+                 //props.setSearchProducts(res.data);
+                 localStorage.setItem("Products" , JSON.stringify(res.data));
                  for(let i = 0; i < res.data.length; i++){
                     if(temp.includes(res.data[i].categories)){
                         continue;
