@@ -4,9 +4,9 @@ import {Navbar, Nav, NavDropdown} from 'react-bootstrap';
 import SearchBox from './searchBox';
 
 
-const Header = () => {
-
-
+const Header = (props) => {
+    
+    console.log("props in header,", props.searchProducts);
     return (
         <header>
             <Navbar   bg='dark' variant='dark' expand='lg' fixed='top' >
@@ -38,7 +38,7 @@ const Header = () => {
                         </NavDropdown>
                     </Nav>
 
-                    < SearchBox/>
+                    < SearchBox setIfSearch={props.setSearch} searchProducts={props.searchProducts}/>
 
                     <Nav className='ml-auto'>
                         <Nav.Item>
