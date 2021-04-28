@@ -25,17 +25,19 @@ function App() {
   console.log("filterSearch,",JSON.parse(localStorage.getItem("filterProducts")));
   const filterSearch = JSON.parse(localStorage.getItem("filterProducts"));
   const searchProducts = JSON.parse(localStorage.getItem("Products" ));
+  const categoriesForHeader = JSON.parse(localStorage.getItem("categoriesForHeader"));
   console.log("searchProducts,",searchProducts);
+  console.log("categoriesForHeader,",categoriesForHeader);
   
   return (
     <div className="App">
       <BrowserRouter>
-        <Header setSearch={setIfSearch} searchProducts={searchProducts}/>
+        <Header setSearch={setIfSearch} searchProducts={searchProducts} categoriesForHeader={categoriesForHeader}/>
 
 
         <Switch>
           {/* <Route path='/' exact component={HomePage}/> */}
-          <Route exact={true} path='/' render={(props) => (<HomePage {...props}/> )} />
+          <Route exact={true} path='/' render={(props) => (<HomePage {...props} /> )} />
           <Route path='/register' exact component={Register}/>
           <Route path='/signIn' exact component={SignIn}/>
           <Route path='/category/:category' component={Category}/>
