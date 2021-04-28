@@ -15,7 +15,7 @@ import CategoryA2 from "./pages/categoryA2";
 import CategoryA3 from "./pages/categoryA3";
 
 import Footer from "./Component/footer";
-import ProductPage from "./pages/productPage";
+import ProductPage from "./Component/productPage";
 import SearchPage from "./Component/searchPage";
 
 

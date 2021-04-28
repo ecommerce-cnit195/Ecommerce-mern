@@ -1,6 +1,8 @@
 import React, {useEffect, useState} from "react";
 import {Button, Carousel, Col, Container, ListGroup, Row} from 'react-bootstrap';
 import axios from 'axios';
+import store from '../redux/store';
+import {addItemToCart} from "../redux/action/action";
 import { set } from "mongoose";
 
 const endpoint = 'http://localhost:5000/product';
@@ -12,6 +14,7 @@ const ProductPage =(props) => {
     const [brand, setBrand] = useState("");
     const [price, setPrice] = useState("");
     const [description, setDescription] = useState("");
+    const [product, setProduct] = useState();
 
     const idParams = props.match.params.id;
     
@@ -27,6 +30,7 @@ const ProductPage =(props) => {
                     setBrand(res.data.brand);
                     setPrice(res.data.productPrice);
                     setDescription(res.data.description);
+                    setProduct(res.data);
                })
                .catch((err) => console.log("Error for getting a single product"))
     })
@@ -75,7 +79,7 @@ const ProductPage =(props) => {
                       <h5><span style={{color:'#FFA500',fontWeight:'bold'}}>Description:</span> {description}</h5>
                   </ListGroup.Item>
                   <ListGroup.Item   >
-                    <Button type='button' variant='warning' block >
+                    <Button type='button' variant='warning' onClick={()=>store.dispatch(addItemToCart(product))} block >
                         Add to Cart
                     </Button>
                   </ListGroup.Item>
