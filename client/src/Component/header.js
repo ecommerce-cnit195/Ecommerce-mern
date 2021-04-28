@@ -6,7 +6,7 @@ import SearchBox from './searchBox';
 
 const Header = (props) => {
     
-    console.log("props in header,", props.searchProducts);
+    console.log("props in header,", props.searchProducts ,props.categoriesForHeader);
     return (
         <header>
             <Navbar   bg='dark' variant='dark' expand='lg' fixed='top' >
@@ -18,10 +18,15 @@ const Header = (props) => {
                 <Navbar.Collapse id='basic-navbar-nav' >
                     <Nav className="mr-auto">
                         <NavDropdown title="Products" id="basic-nav-dropdown" className='p-2'>
+                            {
+                                props.categoriesForHeader.map((item, i) => (
+                                    <NavDropdown.Item href={`/category/${item}`} key={i}>{item}</NavDropdown.Item>
+                                ))
+                            }
 
-                                <NavDropdown.Item href='/categoryA'>Electronics</NavDropdown.Item>
+                                {/* <NavDropdown.Item href='/categoryA'>Electronics</NavDropdown.Item> */}
 
-                            <NavDropdown.Divider/>
+                            {/* <NavDropdown.Divider/>
 
                                 <NavDropdown.Item href='/categoryA1'>Mobile Phones</NavDropdown.Item>
 
@@ -31,7 +36,7 @@ const Header = (props) => {
 
                                 <NavDropdown.Item href='/categoryA3'>Tablets</NavDropdown.Item>
 
-                            <NavDropdown.Divider/>
+                            <NavDropdown.Divider/> */}
 
                                 <NavDropdown.Item href='/categoryB'>Separated link</NavDropdown.Item>
 

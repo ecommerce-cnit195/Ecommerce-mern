@@ -28,6 +28,7 @@ const HomePage = (props) => {
                     }
                 }
                 setCategories(temp);
+                localStorage.setItem("categoriesForHeader" , JSON.stringify(temp));
              })
              .catch((error) => {
                 console.log('Error for getting products!');
