@@ -1,29 +1,61 @@
 import React, {useState} from 'react';
-import  {  Card, CardDeck, Carousel, Container, Image, Button, CardColumns, Col, Row } from 'react-bootstrap';
+import  {  ListGroup, CardDeck, Carousel, Container, Image, Button, CardColumns, Col, Row } from 'react-bootstrap';
+import store from '../redux/store';
+import {addItemToCart} from "../redux/action/action";
 
 function SearchPage(props){
     return (
-        <Container fluid className='pt-5 '>
-           { props.filterSearch.length == 0 ? ((<h1>Do not have such products...</h1>)) : (
-                <CardColumns>
-                {props.filterSearch.map((item)=>(
-                <Card border='warning' className='ml-2 mt-2 p-2'>
-                <Card.Link href={`/productPage/${item._id}`}>
-                    <Card.Img variant="top" src={item.productImge} style={{width: '100%', height: '220px', objectFit: "contain"}}/>
-                </Card.Link>
-                <Card.Body>
-                <Card.Title>{item.productName}</Card.Title>
-                    <Card.Text>{item.brand}</Card.Text>
-                    <Card.Text>Price: ${item.productPrice}</Card.Text>
-                    <Card.Text>Description: {item.description}
-                    </Card.Text>
-                   <Button variant="warning">Add to cart</Button>
-                </Card.Body>
-               </Card>))}
-               </CardColumns>)
-               }
-      
-      </Container>
+        <Container className='p-5'  >
+            <h1 className='p-5 '>Search Product Page</h1>
+            {props.filterSearch.length == 0 ? ((<h2>Do not have such products...</h2>)) : (props.filterSearch.map((item) => (
+
+                <React.Fragment key={item._id}>
+                <Row>
+                    <Col md={6} className='p-3'>
+                        <Carousel>
+                            <Carousel.Item>
+                                <img
+                                    className="d-block w-100"
+                                    src= {item.productImge}
+                                    alt="First slide"
+                                />
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <img
+                                    className="d-block w-100"
+                                    src={item.productImge}
+                                    alt="Second slide"
+                                />
+                            </Carousel.Item>
+                        </Carousel>
+                    </Col>
+                    <Col md={6} className='p-3'>
+                        <ListGroup.Item>
+                            <h5> {item.productName}</h5>
+                        </ListGroup.Item>
+                        <ListGroup.Item>
+
+                            <h5>Brand: {item.brand}</h5>
+                        </ListGroup.Item>
+                        <ListGroup.Item>
+                            <h5>Price: {item.productPrice}</h5>
+                        </ListGroup.Item>
+                        <ListGroup.Item>
+                            <h5>Description: {item.description}</h5>
+                        </ListGroup.Item>
+                        <ListGroup.Item>
+                            <Button  variant='warning' onClick={()=>store.dispatch(addItemToCart(item))}  block>
+                                Add to Cart
+                            </Button>
+                        </ListGroup.Item>
+
+                    </Col>
+
+                </Row>
+                    </React.Fragment>)
+
+            ))}
+        </Container>
     );
 }
 

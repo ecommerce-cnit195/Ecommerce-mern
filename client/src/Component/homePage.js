@@ -101,18 +101,5 @@ const HomePage = (props) => {
         
 }
 
-// const mapDispatchtoProps = (dispatch) => {
-//     return {
-//         addToCart: (item) => {
-//             dispatch(addItemToCart({item}));
-//         }
-//     }
-// }
 
-// const mapStateToProps = (state) => {
-//     console.log("state in homepage,", state);
-//     return {itemsInCart: state.shoppingCartReducer};
-// }
-
-// export default connect(mapStateToProps, mapDispatchtoProps)(HomePage);
 export default HomePage;

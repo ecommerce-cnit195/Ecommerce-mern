@@ -2,6 +2,8 @@ import React, {useState, useEffect}  from 'react';
 import axios from 'axios';
 import  { Card, Col, Container, Image, Row, Button } from 'react-bootstrap';
 import BrandBox from '../Component/brandBox';
+import store from '../redux/store';
+import {addItemToCart} from "../redux/action/action";
 
 const endpoint = 'http://localhost:5000/product';
 
@@ -48,7 +50,7 @@ const Category = (props) => {
                                     <Card.Text>{item.brand}</Card.Text>
                                     <Card.Text>Price: ${item.productPrice}</Card.Text>
                                     <Card.Text>Description: {item.description}</Card.Text>
-                                    <Button variant="warning">Add to Cart</Button>
+                                    <Button variant="warning" onClick={()=>store.dispatch(addItemToCart(item))}>Add to Cart</Button>
                                 </Card.Body>
                             </Card>
                         ))

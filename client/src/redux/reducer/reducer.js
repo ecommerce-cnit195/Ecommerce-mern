@@ -14,9 +14,6 @@ const Reducer = (state=[], action) => {
         case REMOVE_TIEM_FROM_CART:
             return state.filter(item => item !== payload)
         
-        case CLEAR_THE_CART:
-            return state = []
-        
         default:
             console.log("state", state);
             return state;
