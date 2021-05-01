@@ -2,9 +2,12 @@ import React from 'react';
 
 import {Navbar, Nav, NavDropdown} from 'react-bootstrap';
 import SearchBox from './searchBox';
+import {useSelector} from "react-redux";
 
 
 const Header = (props) => {
+    
+    const itemInCart = useSelector(state => state.shoppingCartReducer);
     
     console.log("props in header,", props.searchProducts ,props.categoriesForHeader);
     return (
@@ -68,7 +71,7 @@ const Header = (props) => {
 
                             <Nav.Link href='/cart'>
 
-                                <i className='fas fa-shopping-cart'></i> Cart
+                                <i className='fas fa-shopping-cart'></i> Cart({itemInCart.length})
 
                             </Nav.Link>
 
