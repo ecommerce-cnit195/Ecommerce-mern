@@ -21,10 +21,11 @@ const Header = (props) => {
                 <Navbar.Collapse id='basic-navbar-nav' >
                     <Nav className="mr-auto">
                         <NavDropdown title="Products" id="basic-nav-dropdown" className='p-2'>
-                            {
+                            {  !props.categoriesForHeader.map ? null :
                                 props.categoriesForHeader.map((item, i) => (
                                     <NavDropdown.Item href={`/category/${item}`} key={i}>{item}</NavDropdown.Item>
                                 ))
+                              
                             }
 
                                 {/* <NavDropdown.Item href='/categoryA'>Electronics</NavDropdown.Item> */}
