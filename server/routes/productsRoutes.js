@@ -1,4 +1,5 @@
 const express = require('express');
+const { Mongoose } = require('mongoose');
 const productsRouter = express.Router();
 const Product = require("../models/products")
 
@@ -75,6 +76,48 @@ productsRouter.get("/id/:id", (req, res) => {
         .catch(err=>res.status(400).json("Get Error: "+ err.message))
 })
 
+productsRouter.delete("/deleteProduct/:id", async (req,res) => {
+    console.log("delete,",req.params.id);
+
+    const delProduct = await Product.findByIdAndRemove(req.params.id);
+    console.log("delProduct,", delProduct);
+
+    if(delProduct){
+        return res.status(200).json({msg: "The product has been deleted!"})
+    }
+
+    return res.status(500).json({error: "The product cannot be deleted!"});
+})
+
+productsRouter.put("/edirProduct/:id", async (req, res) => {
+    const productID = req.body.productID;
+    const productName = req.body.productName;
+    const productPrice = req.body.productPrice;
+    const productQuantity = req.body.productQuantity;
+    const productImge = req.body.productImge;
+    const productHasTaxe = req.body.productHasTaxe;
+    const description = req.body.description;
+    const categories = req.body.categories;
+    const brand = req.body.brand;
+
+    const editProduct = await Product.findByIdAndUpdate(req.params.id, {
+        productID,
+        productName,
+        productPrice,
+        productQuantity,
+        productImge,
+        productHasTaxe,
+        description,
+        categories,
+        brand
+    });
+
+    if(editProduct){
+        return res.status(200).json({editProduct});
+    }
+
+    return res.status(500).json({error: "The product cannot be editted!"});
+})
 
 module.exports = productsRouter;
 

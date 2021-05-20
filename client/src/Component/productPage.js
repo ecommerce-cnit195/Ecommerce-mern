@@ -33,7 +33,7 @@ const ProductPage =(props) => {
                     setProduct(res.data);
                })
                .catch((err) => console.log("Error for getting a single product"))
-    })
+    }, [])
 
     return(
         <Container className='p-5'>

@@ -19,10 +19,11 @@ const SignIn = (props) => {
         e.preventDefault()
         AuthService.login(user).then((data)=>{
             const {isAuhtentecated, user,message} = data
+            console.log('login,', data);
             if(isAuhtentecated){
                 authContext.setUser(user)
                 authContext.isAuhtentecated(isAuhtentecated)
-                props.history.push("/categoryA")
+                props.history.push("/category")
             } else setMessage(message)
         })
     }

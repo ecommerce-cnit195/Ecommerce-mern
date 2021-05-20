@@ -31,15 +31,9 @@ const Header = (props) => {
                                 {/* <NavDropdown.Item href='/categoryA'>Electronics</NavDropdown.Item> */}
 
                             {/* <NavDropdown.Divider/>
-
                                 <NavDropdown.Item href='/categoryA1'>Mobile Phones</NavDropdown.Item>
-
-
                                 <NavDropdown.Item href='/categoryA2' >Laptops</NavDropdown.Item>
-
-
                                 <NavDropdown.Item href='/categoryA3'>Tablets</NavDropdown.Item>
-
                             <NavDropdown.Divider/> */}
 
                                 <NavDropdown.Item href='/categoryB'>Separated link</NavDropdown.Item>
