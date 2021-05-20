@@ -17,6 +17,7 @@ import CategoryA3 from "./pages/categoryA3";
 import Footer from "./Component/footer";
 import ProductPage from "./Component/productPage";
 import SearchPage from "./Component/searchPage";
+import Admin from "./Component/admin";
 
 
 function App() {
@@ -49,6 +50,7 @@ function App() {
           <Route path='/searchPage' render={(props) => <SearchPage {...props} filterSearch={filterSearch}/>} />
          {/* <Route path='/add' component={AddEvent} />
           <Route path='/edit/:id' component={Edit} />  */}
+          <Route path='/admin' component={Admin} />
         </Switch>
         <Footer />
       </BrowserRouter>
